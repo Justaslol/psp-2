@@ -4,11 +4,11 @@ package lt.vu.mif;
 public class Main {
 
     public static void main(String[] args) {
-        Accommodation accommodation = new Motel( RoomType.DOUBLE_BED);
+        Accommodation accommodation = new Motel(RoomType.DOUBLE_BED);
         accommodation.addExtension("once", new OnceInDayFeeding(accommodation));
 
         FeedingExtension feeding = accommodation.getExtension("once");
 
-        System.out.println(feeding.priceWithfeed(5));
+        System.out.println(feeding.priceWithfeed(4));
     }
 }
